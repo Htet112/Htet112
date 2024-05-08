@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+/* Video background */
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#bg-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #000000;
+    margin-right: 20px;
+}
+
+.icons {
+    display: flex;
+}
+
+.search-box {
+    display: none;
+}
+
+.book-section {
+    background-color: #802323;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.book-section .inner-book {
+    display: flex;
+    justify-content: space-between;
+}
+
+.book-section input[type="text"] {
+    width: 22%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.book-section .book-btn a {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+/* Visit Abu Dhabi Section */
+.visit-abu-dhabi {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.visit-abu-dhabi h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.visit-abu-dhabi p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.abu-dhabi-highlights {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.highlight {
+    flex: 1;
+    padding: 20px;
+}
+
+.highlight img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.highlight h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.highlight p {
+    font-size: 16px;
+}
+
+.explore-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.explore-button:hover {
+    background-color: #0056b3;
+}
+/* Define slide-in animation */
+@keyframes slideInLeft {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Apply slide-in animation to all elements with the 'highlight' class */
+  .highlight {
+    animation: slideInLeft 2s ease-out;
+  }
+  
+  /* Apply slide-in animation to the search box */
+  .search-box {
+    animation: slideInLeft 2s ease-out;
+  }
+  
+  /* Apply slide-in animation to the booking section */
+  .book-section {
+    animation: slideInLeft 2s ease-out;
+  }
+  
+  /* Apply slide-in animation to the visit Abu Dhabi section */
+  .visit-abu-dhabi {
+    animation: slideInLeft 2s ease-out ;
+  }
+  /* Define slide-in animation */
+@keyframes slideInRight {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Apply slide-in animation to the visit Abu Dhabi section */
+  .visit-abu-dhabi {
+    animation: slideInRight 1s ease-in-out;
+  }
+  
+  /* Apply hover effect to highlight elements */
+  .highlight {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Scale up the highlight element on hover */
+  .highlight:hover {
+    transform: scale(1.05);
+  } 
+   
+  .logo-link {
+    display: inline-block; /* Ensure the link is a block-level element */
+}
+
+  
+  /* Logo styling */
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 100px; /* Adjust according to your logo size */
+    height: auto; /* This will maintain aspect ratio */
+  }
+
+  /* explore page */
+  

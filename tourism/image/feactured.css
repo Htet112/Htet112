@@ -1,0 +1,715 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+:root{
+    --gray:#757372;
+    --dark-gray: #272628;
+    --black:#444;
+    --light-color: #666;
+    --border: 1rem solid rgba(0,0,0,.1);
+    --border-hover:.1rem solid var(--black);
+    --box-shadow: 0.5rem 1rem rgba(0,0,0, 1)
+}
+
+*{
+    font-family: Arial, sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    transition: width none;
+}
+
+ html{ 
+    font-size: 62.5%;
+    overflow-x:scroll; 
+    scroll-padding-top: 15rem;
+    scroll-behavior: smooth;
+    
+}
+
+html::-webkit-scrollbar{
+    width: 1.5rem;
+    height: 100%;
+    
+}
+
+html::-webkit-scrollbar-track{
+    background:transparent;
+    
+}
+html::-webkit-scrollbar-thumb{
+    background-color:var(--dark-gray);
+    
+
+} 
+/* button */
+.btn{
+    margin-top:1rem;
+    display: inline-block;
+    padding: .9rem 3rem;
+    border-radius: 5rem;
+    color: #fff;
+    background: var(--green);
+    font-size: 1.7rem; 
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.btn:hover{
+    background: var(--dark-color);
+}
+/* login bar */
+.login-form-container{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background: rgb(255,255,255,9);
+    position: fixed;
+    top: 0;right: -105%;
+    z-index: 10000;
+    height: 100%;
+    width: 100%;
+}
+
+.login-form-container.active{
+    right: 0;
+}
+
+.login-form-container form{
+    background: #fff;
+    border:var(--border) ;
+    width: 40rem;
+    padding: .1rem;
+    box-shadow: var(--box-shadow);
+    border-radius: 5rem;
+    margin: 2rem;
+}
+
+.login-form-container form h3{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: var(--black);
+    text-align: center;
+}
+
+.login-form-container form span{
+    display: block;
+    font-size: 2rem;
+    padding-top: 1rem;
+}
+
+.login-form-container form .box{
+    width: 100%;
+    margin: 3rem 0;
+    font-size: 2.1rem;
+    border: var(--border);
+    border-radius: 5rem;
+    padding: 1rem 1.2rem ;
+    color: var(--black);
+    text-transform: none
+}
+.login-form-container form .checkbox{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding: 1rem 0
+}
+.login-form-container form .checkbox label{
+    font-size: 2rem;
+    color: var(--light-color);
+    cursor: pointer;
+}
+.login-form-container form .checkbox .btn{
+    text-align: center;
+    width: 100%;
+    margin: 1.5rem 0;
+}
+.login-form-container form p{
+    padding-top: .8rem;
+    color: var(--light-color);
+    font-size: 2rem;
+    
+}
+.login-form-container form p a{
+    color: var(--green);
+    text-decoration: underline;
+}
+.login-form-container #close-login-btn{
+    position: absolute;
+    top: 1.5rem;right: 2.5rem;
+    font-size: 6rem;
+    color: var(--black);
+    cursor: pointer;
+}
+/* home section */
+
+/* search start */
+.search-container{
+    padding: 2rem 0 1.5rem 0;
+}
+.search-container .search-name{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+.search-container .search-name a{
+    font-size: 2rem;
+    color:var(--gray) ;
+    padding: 0 1.2rem;
+    gap: 1.5rem;
+}
+.search-container .search-name a:hover{
+    background: var(--dark-gray);
+    color: #fff;
+    padding: 1rem 0 1rem 0;
+    border: var(--border-hover);
+    border-radius: .5rem;
+    
+}
+
+/* theme start */
+.theme{
+    padding-top: 1rem;
+    background:#802323;
+    width: 100%;
+    height: 30%;
+}
+.theme .theme-links a{
+    font-size: 1.3rem;
+    gap: 1rem;
+    color: #fff;
+    padding-bottom: .5rem;
+}
+.theme .theme-links a:hover{
+    color:var(--gray);
+    font-size: 1.7rem;
+}
+.theme .word{
+    padding-top: 1.3rem;
+}
+.theme .word h1{
+    font-size: 4.5rem;
+    padding-bottom: 1.2rem;
+}
+
+/* theme end */
+/* middle box start */
+.box-1 {
+    float: left;
+    clear: left;
+}
+.box-3{
+    padding-left: 15rem;
+    overflow:hidden;
+}
+
+
+
+.box-2 {
+    clear: left;
+    float: left;
+    
+}
+box end
+/* /* listing start  */
+.box-1 .listing{
+    padding-top: 2rem;
+    
+
+}
+.box-1 .listing .words{
+    background: wheat;
+    width: 150%;
+    padding-bottom: 3rem;
+}
+.box-1 .listing .words h1{
+    font-size: 5rem;
+    padding-bottom: 1.5rem;
+    text-align: left;
+    margin-left:3.5rem ;
+}
+.box-1 .listing .words h1 span{
+font-size: 2.5rem;
+padding-bottom: 1.5rem;
+padding-left:.5rem ;
+text-align: left;
+margin-left:1rem ;
+}
+.box-1 .listing .words a{
+    border: var(--border);
+    padding: .3rem ;
+    background: rgb(207, 142, 21);
+    color:#0b0b0b;
+    border-radius:3rem ;
+    font-size: 2.5rem;
+    
+}
+.box-1  .listing .words a:hover{
+    background:black;
+    color: #fff;
+}
+.box-1 .listing .words a:hover i{
+    padding-left:2rem ;
+}
+/* listing end */
+
+/* /* Filter start   */
+.filter{
+    padding-top: 2rem;
+   
+
+    
+}
+.filter .content{
+    background: wheat;
+    padding-bottom: 3rem;
+    
+}
+.filter .content .filter-1{
+color: var(--dark-gray);
+padding-bottom:1rem ;
+font-size: 2rem;
+}
+.filter .content .select-location{
+    font-size: 1.8rem;
+    color: var(--dark-gray);
+    padding-bottom: 1rem;
+    
+}
+.filter .content .select-location h3{
+    font-size: 2.2rem;
+    padding-bottom: 1rem;
+}
+.filter .content .select-location .selectbar {
+    font-size: 2rem;
+
+}
+.filter .content .select-location .selectbar option:hover{
+    background: var(--gray);
+}
+.filter .content .Tripadvisor{
+    padding-top: 2rem;
+    
+}
+.filter .content .Tripadvisor h3{
+    font-size: 2.5rem;
+    padding-bottom: 1.5rem;
+
+}
+.filter .content .Tripadvisor .checkbox{
+    width: 1.3em;
+    height: 1.3em;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+    
+}
+
+.filter .content .Tripadvisor .checkbox:checked {
+    background-color: gray;
+}
+
+
+/* feactured */
+.box-3 .heading{
+    padding-top: 2rem;
+    font-size: 3rem;
+}
+.box-3 .adventure-slider .box{
+    width: 35rem;
+    height: auto;
+    margin: 2rem 0;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    border: var(--border);
+    border-radius: 3rem;
+    background:rgba(0,0,0,.1) 
+}
+.box-3 .adventure-slider .box:hover{
+    border: var(--border-hover);
+}
+.box-3 .adventure-slider .box .image{
+    padding-left: .5rem;
+    
+}
+.box-3 .adventure-slider .box .image img{
+    width: 450px;
+    height: 200px;
+}
+.box-3 .adventure-slider .box .image:hover img{
+    transform: scale(1.1);
+    transition-duration: 1.5s;
+}
+
+.box-3 .adventure-slider .box .content{
+    padding-top:.5rem ;
+    text-align: left;
+}
+.box-3 .adventure-slider .box .content h3{
+    font-size: 2rem;
+    padding-bottom: 6rem;
+}
+.box-3 .adventure-slider .box .content a{
+    border: 1rem solid #802323;
+    border-radius: 5rem;
+    font-size: 1.5rem;
+    color: #0b0b0b;
+    background:#802323 ;
+    font-weight: 700;
+    
+}
+.box-3 .adventure-slider .box .content a:hover{
+    background: black;
+    color: #fff;
+    padding: 1rem .5rem 1rem .5rem;
+    border: #0b0b0b;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer start */
+.footer-box{
+    padding-top: 7%;
+    position:inherit;
+    width: 100%;
+}
+.footer{
+    background: rgb(115, 14, 14);
+
+}
+.footer .box-container{
+    display:grid ;
+    grid-template-columns:repeat(auto-fit,minmax(25rem,1fr));
+    gap: 1.5rem;
+}
+.footer .box-container .container-1{
+    font-size: 1.8rem;
+    color: #fff;
+    
+}
+.footer .box-container .container-1 .quick-link a{
+    color: #fff;
+    font-size: 1.5rem;
+    display: flex; 
+    height: 2.5rem;
+    width: 3.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+
+}
+.footer .box-container .container-1 .quick-link a:hover{
+    font-size: 1.5rem;
+    color: #0b0b0b;
+    
+}
+.footer .box-container .container-2{
+    font-size: 1.8rem;
+    color: #fff;
+    
+}
+.footer .box-container .container-2 .newletter p{
+    font-size: 1.5rem;
+    color: #fff;
+    padding-top: 1.5rem;
+}
+.footer .box-container .container-2 .newletter .btn{
+    padding-top: 1.5rem;
+    padding:1rem 0 2rem 0;
+
+}
+.footer .box-container .container-2 .newletter .btn a{
+    color: #fff;
+    border: var(--border);
+    border-radius: 5rem;
+    background: orange;
+    text-align: left;
+}
+.footer .box-container .container-2 .newletter .btn a:hover{
+    background: #0b0b0b;
+}
+.footer .box-container .container-2 .newletter .btn a:hover i{
+    padding: 1rem 1rem 1rem 1rem;
+}
+.footer .box-container .container-3{
+    font-size: 1.8rem;
+    color: #ddd;
+}
+.footer .box-container .container-3 .follow-us{
+    padding-top: 1rem;
+}
+.footer .box-container .container-3 .follow-us a{
+    padding-top:1rem ;
+}
+.footer .box-container .container-3 .follow-us a i{
+    font-size: 3.5rem;
+    color: #fff;
+    padding-left:1.5rem ;
+}
+.footer .box-container .container-3 .follow-us a:hover i{
+    color: #0b0b0b;
+    transform:scale(1.5);
+    transition-duration: 0.5s;
+    padding-right: 1.5rem;
+
+}
+
+/* footer end */
+
+/* hamza code */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+/* Video background */
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#bg-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: #000000;
+    margin-right: 20px;
+}
+
+.icons {
+    display: flex;
+    font-size: 1.6rem;
+}
+
+.search-box {
+    display: none;
+}
+
+.book-section {
+    background-color: #802323;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.book-section .inner-book {
+    display: flex;
+    justify-content: space-between;
+}
+
+.book-section input[type="text"] {
+    width: 22%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.book-section .book-btn a {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+/* Visit Abu Dhabi Section */
+.visit-abu-dhabi {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.visit-abu-dhabi h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.visit-abu-dhabi p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.abu-dhabi-highlights {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.highlight {
+    flex: 1;
+    padding: 20px;
+}
+
+
+
+.highlight h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.highlight p {
+    font-size: 16px;
+}
+
+.explore-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.explore-button:hover {
+    background-color: #0056b3;
+}
+/* Define slide-in animation */
+@keyframes slideInLeft {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Apply slide-in animation to all elements with the 'highlight' class */
+  .highlight {
+    animation: slideInLeft 2s ease-out;
+  }
+  
+  /* Apply slide-in animation to the search box */
+  .search-box {
+    animation: slideInLeft 2s ease-out;
+  }
+  
+  /* Apply slide-in animation to the booking section */
+  .book-section {
+    animation: slideInLeft 2s ease-out;
+  }
+  
+  /* Apply slide-in animation to the visit Abu Dhabi section */
+  .visit-abu-dhabi {
+    animation: slideInLeft 2s ease-out ;
+  }
+  /* Define slide-in animation */
+   
+@keyframes slideInRight {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Apply slide-in animation to the visit Abu Dhabi section */
+  .visit-abu-dhabi {
+    animation: slideInRight 1s ease-in-out;
+  }
+  
+  /* Apply hover effect to highlight elements */
+  .highlight {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Scale up the highlight element on hover */
+  .highlight:hover {
+    transform: scale(1.05);
+  } 
+   
+  .logo-link {
+    display: inline-block; /* Ensure the link is a block-level element */
+}
+
+  
+  /* Logo styling */
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 100px; /* Adjust according to your logo size */
+    height: auto; /* This will maintain aspect ratio */
+  }
+
+  /* explore page */
+  
